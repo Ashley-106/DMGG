@@ -3,46 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/styles.css"> 
     <link rel="stylesheet" href="css/normalize.css"> 
-    <title>Document</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <title>Dave Marsh Glass & Glazing</title>
 </head>
 <body>
 
-    <header class="main-header">
+    <header id="top" class="main-header">
+        
         <h1 class="title"><a href="index.html">DMGG</a></h1>
         <nav class="main-nav">
             <ul>
-                <li><a href="#">Placeholder</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a id="services" class="hover drop-down" >Services</a></li>
+                    <div id="drop-down-list" class="hover drop-down">
+                        <ul>
+                            <li><a id="commerial" class="hover" href="commerical.html">Commercial</a></li>
+                            <li><a id="domestic" class="hover" href="domestic.html">Domestic</a></li>
+                            <li><a id="other" class="hover" href="other.html">Other Services</a></li>
+                        </ul>
+                    </div>
+                <li><a id="gallery" class="hover" href="gallery.html">Gallery</a></li>
+                <li><a id="reviews" class="hover" href="reviews.html">Reviews</a></li>
+                <li><a id="contact" class="hover" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    
+</header>
 
-    <div class="wrapper">
+    <div class="contact-container">
+
+                <div class="contact-col-1">
+                    
+                        <h3 class="heading left">Contact Us</h3>
+                            <p>We cover the entire Dorset area, do not hesitate to contact us. Or request a call back or a no obligation quote.</p>
+                            <ul>
+                                <li>Email: Davemarshglass&glazing.com</li>
+                                <li>Telephone: 01202 380378</li>
+                                <li>Mobile: 07941 544438</li>
+                            </ul>
+                        
+                    <div id="map">
+                        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfALdJ7nwQFzxbAsKnKvcHbiqDjgp7GNg&callback=initMap">
+                        </script>
+                        <!-- Google maps api insert -->
+                    </div>
+
+                </div>
         
-            <form class="form" action="index.html" method="post">
+            <div class="contact-col-2">
 
-                <fieldset>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name">
+                <h3 class="heading left">Contact here Call back or Quote.</h3>
 
-                    <label for="phone">Contact Number:</label>
-                    <input type="tel" name="phone" id="phone">
+                <form class="form" action="contact.html" method="POST">
+                    <!-- in progress working on -->
+                    <fieldset>
+                        <label for="name" class="btn-1">Full Name:</label>
+                        <input class="form-style" type="text" name="name" id="name">
 
-                    <label for="email">Contact Email Address:</label>
-                    <input type="email" name="email" id="email">
-                </fieldset>
-                
-                <fieldset>
-                    <label for="work-required">Brief Explanation Of Work Required:</label>
-                    <textarea name="work-required" id="work-required">
-                        For example: Window/Door Repairs, Misted/Failed windows etc.         
-                    </textarea>
-                </fieldset>
-            </form>
-        
+                        <label for="phone" class="btn-1">Contact Number:</label>
+                        <input class="form-style" type="tel" name="phone" id="phone">
+
+                        <label for="email" class="btn-1">Email:</label>
+                        <input class="form-style" type="email" name="email" id="email">
+                    
+                        <label for="work-required" class="btn-1 text-area">Brief Explanation Of Work <br class="break"> Required:</label>
+                        <textarea class="textarea-style" name="work-required" id="work-required" rows="8">For example: Window/Door Repairs, Misted/Failed windows etc.</textarea>
+
+                        <button class="btn-1 send">Send</button>
+                    </fieldset>
+
+                </form>
+            </div>
+       
     </div>
 
 
@@ -51,9 +84,42 @@
 
 
 
-    <!-- <footer class="main-footer">
-        <h4>&copy; Copyright Dave Marsh Glass & Glazing 2020</h4>
-    </footer>-->
-    
+    <footer>
+        <div class="footer">
+       
+            <div class="foot-layout">
+                <h2>Site Map:</h2>
+                <ul>
+                    <li class="btn-2"> <a href="#top">Top</a></li>
+                    <li class="btn-2"><a href="commerical.html">Commercial</a></li>
+                    <li class="btn-2"><a href="domestic.html">Domestic</a></li>
+                    <li class="btn-2"><a href="other.html">Other Services</a></li>
+                    <li class="btn-2"><a href="gallery.html">Gallery</a></li>
+                    <li class="btn-2"><a href="reviews.html">Reviews</a></li>
+                    <li class="btn-2"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
 
+            
+                
+            
+            <div class="foot-info">
+
+                <h2>Contact:</h2>
+                <p>We cover the entire Dorset area so do not hesitate to contact us.
+                    Or request a call back or no obligation quote.
+                </p>
+
+                <p>Email : davemarshglass&glazing@gmail.com</p>
+                <p>Home: 01202 380378</p>
+                <p>Mobile: 07941 544438</p>
+                
+            </div>
+        
+        </div>
+        <h4>&copy; Copyright Dave Marsh Glass & Glazing 2020</h4>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
 </html>

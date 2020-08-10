@@ -3,63 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/styles.css"> 
     <link rel="stylesheet" href="css/normalize.css"> 
-    <title>Document</title>
+    <title>Dave Marsh Glass & Glazing</title>
 </head>
 <body>
 
-    <header class="main-header">
+    <header id="top" class="main-header">
+        
         <h1 class="title"><a href="index.html">DMGG</a></h1>
         <nav class="main-nav">
             <ul>
-                <li><a href="#">Placeholder</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a id="services" class="hover drop-down" >Services</a></li>
+                    <div id="drop-down-list" class="hover drop-down">
+                        <ul>
+                            <li><a id="commerial" class="hover" href="commerical.html">Commercial</a></li>
+                            <li><a id="domestic" class="hover" href="domestic.html">Domestic</a></li>
+                            <li><a id="other" class="hover" href="other.html">Other Services</a></li>
+                        </ul>
+                    </div>
+                <li><a id="gallery" class="hover" href="gallery.html">Gallery</a></li>
+                <li><a id="reviews" class="hover" href="reviews.html">Reviews</a></li>
+                <li><a id="contact" class="hover" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    
+</header>
 
-    <div class="wrapper">
-            <div class="card">
-                <article class="review-card-inner">
-                    <header>Replaced rollers on sliding patio door.</header>
-                    <p>Very professional, tidy. Had excellent knowledge about repair. 
-                        Checked all working well on leaving.</p>
-                    <footer>Customer in Poole March 2020</footer>
-                </article>
+    <div class="review-container">
+
+        
+        <div id="review-text">
+
+            
+            <h2 id='review-title'><!-- content inserted from review.js --></h2>
+              
+
+            <div id="hr-large-div">
+                <hr id="hr-large" class="hr-large">
             </div>
-            <div class="card">
-                <article class="review-card-inner">
-                    <header>Front door adjustment and general window/door MOT</header>
-                    <p>Friendly honest service, even showed me tips to help myself if needing small 
-                        adjustments in future which was really helpful. Will be my go to guy for 
-                        Window/Doors and would recommend to family and friends.</p>
-                    <footer>Customer in Poole March 2020</footer>
-                </article>
+
+            
+            <p id="review-p"><!-- content inserted from review.js --></p>
+            <p id="review-date"><!-- content inserted from review.js --></p>
+            
+
+            <div id="hr-small-div">
+                <hr id="hr-small" class="hr-small">
             </div>
-            <div class="card">
-                <article class="review-card-inner">
-                    <header>Reglazed internal door and removed broken glass</header>
-                    <p>Dave was courteous, punctual and I am very pleased with his work. 
-                        Would definitely recommend him and use him again.</p>
-                    <footer>Customer in Poole February 2020</footer>
-                </article>
-            </div>
-            <div class="card">
-                <article class="review-card-inner">
-                    <header>Reglazed internal door and removed broken glass</header>
-                    <p>Dave was courteous, punctual and I am very pleased with his work. 
-                        Would definitely recommend him and use him again.</p>
-                    <footer>Customer in Poole February 2020</footer>
-                </article>
-            </div>
+            
 
         </div>
+        <div id="review-controls">
+            <button id="prev" class="btn-1">Previous</button>
+            <button id="next" class="btn-1">Next</button>
+        </div>
+
+        
+    </div>
    
-    <!-- <footer class="main-footer">
-        <h4>&copy; Copyright Dave Marsh Glass & Glazing 2020</h4>
-    </footer> -->
+
+
+        <footer>
+            <div class="footer">
+           
+                <div class="foot-layout">
+                    <h2>Site Map:</h2>
+                    <ul>
+                        <li class="btn-2"> <a href="#top">Top</a></li>
+                        <li class="btn-2"><a href="commerical.html">Commercial</a></li>
+                        <li class="btn-2"><a href="domestic.html">Domestic</a></li>
+                        <li class="btn-2"><a href="other.html">Other Services</a></li>
+                        <li class="btn-2"><a href="gallery.html">Gallery</a></li>
+                        <li class="btn-2"><a href="reviews.html">Reviews</a></li>
+                        <li class="btn-2"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="foot-info">
     
+                    <h2>Contact:</h2>
+                    <p>We cover the entire Dorset area so do not hesitate to contact us.
+                        Or request a call back or no obligation quote.
+                    </p>
+    
+                    <p>Email : davemarshglass&glazing@gmail.com</p>
+                    <p>Home: 01202 380378</p>
+                    <p>Mobile: 07941 544438</p>
+                    
+                </div>
+            
+            </div>
+            <h4>&copy; Copyright Dave Marsh Glass & Glazing 2020</h4>
+        </footer>
+    <script src="scripts.js"></script>
+    <script src="review.js"></script>
 </body>
 </html>
