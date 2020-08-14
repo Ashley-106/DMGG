@@ -9,26 +9,51 @@
 </head>
 <body>
 
-    <header id="top" class="main-header">
-        
-        <h1 class="title"><a href="index.html">DMGG</a></h1>
-        <nav class="main-nav">
+   <!-- mobile nav -->
+   <div id="top" class="nav-col">
+    <h1 class="title"><a href="index.html">DMGG</a></h1>
+    <div id="trigger" class="nav-button">
+        <div class="nav-inner-style"></div>
+        <div class="nav-inner-style"></div>
+        <div class="nav-inner-style"></div>
+    </div>
+
+<header id="target" class="main-header-small">
+        <nav class="main-nav-small">
             <ul>
-                <li><a id="services" class="hover drop-down" >Services</a></li>
-                    <div id="drop-down-list" class="hover drop-down">
-                        <ul>
-                            <li><a id="commerial" class="hover" href="commerical.html">Commercial</a></li>
-                            <li><a id="domestic" class="hover" href="domestic.html">Domestic</a></li>
-                            <li><a id="other" class="hover" href="other.html">Other Services</a></li>
-                        </ul>
-                    </div>
+                <li><a id="commerial" class="hover" href="commerical.html">Commercial</a></li>
+                <li><a id="domestic" class="hover" href="domestic.html">Domestic</a></li>
+                <li><a id="other" class="hover" href="other.html">Other Services</a></li> 
                 <li><a id="gallery" class="hover" href="gallery.html">Gallery</a></li>
                 <li><a id="reviews" class="hover" href="reviews.html">Reviews</a></li>
                 <li><a id="contact" class="hover" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    
 </header>
+</div>
+<!-- mobile nav end -->
+
+<!-- main-nav -->
+<header id="top" class="main-header">
+    
+<h1 class="title"><a href="index.html">DMGG</a></h1>
+<nav class="main-nav">
+    <ul>
+        <li><a id="services" class="hover drop-down">Services</a></li>
+            <div id="drop-down-list" class="hover drop-down">
+                <ul>
+                    <li><a id="commerial" class="hover" href="commerical.html">Commercial</a></li>
+                    <li><a id="domestic" class="hover" href="domestic.html">Domestic</a></li>
+                    <li><a id="other" class="hover" href="other.html">Other Services</a></li>
+                </ul>
+            </div>
+        <li><a id="gallery" class="hover" href="gallery.html">Gallery</a></li>
+        <li><a id="reviews" class="hover" href="reviews.html">Reviews</a></li>
+        <li><a id="contact" class="hover" href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+<!-- main-nav end -->
 
     <div id="gallery-container">
         
@@ -99,6 +124,9 @@
         </div>
         <h4>&copy; Copyright Dave Marsh Glass & Glazing 2020</h4>
     </footer>
+    <script>document.getElementById("trigger").addEventListener('click', function() {
+        slideToggle(document.getElementById("target"), 200);
+    });</script>
     <script src="scripts.js"></script>
     <script src="gallery.js"></script>
 </body>
