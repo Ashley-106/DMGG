@@ -1,4 +1,5 @@
 const scroll = document.getElementById('scroll');
+
 const services = document.querySelectorAll('#services');
 const dropDown = document.querySelectorAll('#drop-down-list');
 
@@ -12,7 +13,6 @@ const navInner = document.getElementsByClassName('nav-inner-style');
 for (let i = 0; i < services.length; i++) {
 
     services[i].addEventListener('click', () => {
-        console.log('test');
         dropDown[i].style.visibility = 'visible';
     
     })

@@ -1,3 +1,28 @@
+<!-- <?php 
+    echo "<pre>";
+
+print_r($_POST);
+
+    echo "</pre>";
+
+    $userName = $_POST['name'];
+    $userTel = $_POST['phone'];
+    $userEmail = $_POST['email'];
+    $userWork = $_POST['work-required'];
+
+    $to = "ashleymarsh106@gmail.com";
+    $body = "";
+
+    $body .= "From: " . $userName . "\r\n";
+    $body .= "Phone: " . $userTel . "\r\n";
+    $body .= "Email: " . $userEmail . "\r\n";
+    $body .= "Work required: " . $userWork . "\r\n";
+
+    mail($to, $userWork, $body);
+?>
+
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +55,7 @@
                     <li><a id="other" class="hover" href="other.html">Other Services</a></li> 
                     <li><a id="gallery" class="hover" href="gallery.html">Gallery</a></li>
                     <li><a id="reviews" class="hover" href="reviews.html">Reviews</a></li>
-                    <li><a id="contact" class="hover" href="contact.html">Contact</a></li>
+                    <li><a id="contact" class="hover" href="contact.php">Contact</a></li>
                 </ul>
             </nav>
     </header>
