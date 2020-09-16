@@ -1,2 +1,0 @@
-cover image transition to bring up text once mouse over. 
-Text about company, experience in the trade etc.
